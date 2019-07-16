@@ -4,4 +4,13 @@ services:
   - docker
 
 script:
-  - docker build -t plus64.nz/sip-registrar-kamailio kamailio
+  - docker build -t plus64nz/sip-registrar-kamailio kamailio
+
+before_deploy:
+  - docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
+
+deploy:
+  provider: script
+  script: docker push plus64nz/sip-registrar-kamailio
+  on:
+    branch: master
