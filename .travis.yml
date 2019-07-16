@@ -1,0 +1,7 @@
+language: minimal
+
+services:
+  - docker
+
+script:
+  - docker build -t plus64.nz/sip-registrar-kamailio kamailio
