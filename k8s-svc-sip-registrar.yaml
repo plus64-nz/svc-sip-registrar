@@ -7,11 +7,14 @@ metadata:
     tier: middle
 spec:
   ports:
-  - port: 5061
+  - name: sip-tls
+    port: 5061
     targetPort: 5061
   selector:
     app: sip-registrar
     tier: middle
+  type: NodePort
+  nodePort: 5061
 ---
 apiVersion: apps/v1
 kind: Deployment
