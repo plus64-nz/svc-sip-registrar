@@ -3,7 +3,7 @@ LABEL maintainer="Michael Walton"
 WORKDIR /root/
 
 RUN apk update \
-  && apk add kamailio kamailio-redis kamailio-tls kamailio-db kamailio-json
+  && apk add kamailio kamailio-redis kamailio-tls kamailio-db kamailio-json kamailio-dbtext
 
 COPY etc /etc/
 
