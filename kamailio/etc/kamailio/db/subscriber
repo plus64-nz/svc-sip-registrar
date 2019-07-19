@@ -1,2 +1,2 @@
 id(int,auto) username(string) domain(string) password(string) ha1(string) ha1b(string)
-1:r1:plus64.nz:catsrus::
+1:r1:plus64.nz:catsrus:3b71f0eea48aa8c038563ef89c9443af:22ce376a33c8f7fd77edc9764d7c380a
